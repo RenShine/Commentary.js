@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tips.css"/>
+</head>
+<body>
+    <div class="article" style="width:300px;height:300px;border:1px solid #333;">
+        <div class="tip-comments" style="display: none;"><ul class="comment-list">
+            <li class="ng-scope single-comment pin-comment">
+                <div class="comment-body ng-binding">逗逗的
+                </div>
+                <div class="comment-meta">
+                    <span class="author-name ng-binding">— babaystar </span>
+                    <time class="create-time">2个月前</time>
+                </div>
+            </li>
+            <li class="ng-scope single-comment pin-comment">
+                <div class="comment-body ng-binding">gg</div>
+                <div class="comment-meta">
+                    <span class="author-name ng-binding">— 辣手摧js </span>
+                    <time class="create-time">14天前</time>
+                </div>
+            </li>
+        </ul>
+        <form class="tip-comment-form"><textarea placeholder="添加讨论…" class="tip-comment-textarea"></textarea><div class="form-control"><button class="tip-submit" type="submit">提交</button></div></form></div>
+		双击以添加评注
+    </div>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="js/Commentary.js"></script>
+    <script>
+	$('.article').Commentary({
+	    addCommentary : function(element){
+	    	console.log(element)
+	    }	
+	});
+    </script>
+</body>
+</html>
