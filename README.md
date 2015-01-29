@@ -13,7 +13,7 @@ Commentary.js 是仿前端乱炖的评注功能，可以给文章的某一个部
 	$('.article').Commentary({
 	    addCommentary : function(element){
 	    	console.log(element)
-			//添加评注的回调，用以跟后端交互
+			//添加评注的回调，用来跟后端交互
 			// element为添加的那枚评注的DOM元素
 	    }	
 	});
